@@ -1,0 +1,388 @@
+ * 
+ {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+.container {
+  padding: 15px;
+}
+.navbar {
+  color: #171717;
+  opacity: 1;
+  background-color: #F4F4F6;
+  background-image: url("../images/background/bg.jpg"); 
+  font-weight: bold;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  display:block;
+  transition: top 0.3s;
+}
+.navbar .nav-item .nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding-right: 35px;
+}
+#header {
+  background-image: url("../images/background/bg.jpg"); 
+  background-color: #EAEAED;
+  background-attachment: fixed;
+  background-size: cover;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  text-align:center;
+}
+.landingPageName {
+  font-size: 80px;
+  font-family: 'Anton', sans-serif;
+  padding-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.landingPageTitle {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 33px;
+}
+.logo {
+  height: 85px;
+  width: 90px;
+}
+.jumbotron {
+  background-image: url("../images/background/jumbotron.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 15px;
+}
+.jumbotronTitle {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.about1stSec {
+  margin-bottom: 0;
+}
+.aboutPar {
+  font-size: 14px;
+  text-align: justify;
+}
+.resume-btn {
+  color: #171717;
+  font-size: 12px;
+  text-align: center;
+  background: #E3E3E5;
+  border: 2px solid #171717;
+  border-radius: 50px;
+  margin-bottom: 1.25em; 
+  -webkit-transition-duration: 0.3s;
+}
+.resume-btn:hover {
+  background: #171717;
+  color: #EAEAED; 
+  border: 2px solid #F5F5F5;
+  -webkit-transition-duration: 0.3s;
+}
+.devTitle {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+.profile-img {
+  height: 160px;
+  margin-bottom: 15px;
+  width: 160px; 
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+}
+.about {
+  background-color: #E3E3E5;
+  background-attachment: fixed;
+}
+ul {
+  margin-bottom: 0px;
+}
+i {
+  color: #2F2F32;
+}
+
+/*Porfolio*/
+.portfolio {
+  background-color: #E3E3E5;
+  background-attachment: fixed;
+}
+.portfolio-proj {
+    margin-top: 0.625em; 
+} 
+.portfolio-proj-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: .5em;
+  margin-top: 1.25em;
+  text-align: justify;
+  margin-left: 45px;
+}
+.portfolio-proj-desc1, 
+.portfolio-proj-desc2 {
+  font-size: 14px;
+  text-align: justify;
+  margin-left: 45px;
+}
+.portfolio-proj-btn {
+  color: #171717;
+  font-size: 12px;
+  background: transparent;
+  border: 2px solid #171717;
+  border-radius: 50px;
+  margin-bottom: 1.25em; 
+  margin-top: 1.50em;
+  -webkit-transition-duration: 0.3s;
+}
+.portfolio-proj-btn:hover {
+  background: #171717;
+  color: #EAEAED; 
+  border: 2px solid #F5F5F5;
+}
+.portfolio-proj-image {
+  margin-bottom: 1.875em;
+  padding-top: 5%; 
+}
+.portfolio-proj-image1, 
+.portfolio-proj-image2, 
+.portfolio-proj-image3,
+.portfolio-proj-image4,
+.portfolio-proj-image5 {
+  display: block;
+  width: 100%; 
+  height: auto;
+  padding-bottom: 50px; 
+  transition: transform 0.3s ease-in-out;
+}
+.portpic{
+  width: 30rem;
+  height: 36rem;
+}
+.overlay h4{
+  margin-top: 10rem;
+}
+.overlay {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: #E3E3E5;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+}
+#project1:hover .overlay,
+#project2:hover .overlay,
+#project3:hover .overlay,
+#project4:hover .overlay,
+#project5:hover .overlay {
+  opacity: .9;
+}
+/*Footer*/
+.contactTitle {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: .5em;
+  margin-top: 1.25em;
+  text-align: center;
+}
+.contactLogo {
+  text-align: center;
+  font-size: 24px;
+}
+.contactSubject {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.contactPar {
+  text-align: center;
+  font-size: 14px;
+}
+.contactFont {
+  font-size: 50px;
+}
+.fa-github:hover {
+  color: #333;
+}
+.fa-facebook:hover {
+  color: #292ce2;
+}
+.fa-telegram:hover {
+  color: #18c2e0;
+}
+.fa-github, 
+.fa-facebook,
+.fa-telegram {
+  color: #171717;
+  cursor: pointer;
+  padding-right: 10px;
+}
+#contact {
+  background-color: #DEDEE0;
+  background-attachment: fixed;
+}
+.footer {
+  background-image: url("../images/background/bg.jpg"); 
+  overflow: hidden;
+  bottom: 0;
+  /* Set the fixed height of the footer here */
+  height: 170px;
+  background-color: #EAEAED;
+  color: #171717; 
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 13px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  .navbar .nav-item .nav-link {
+    font-size: 13px;
+  }
+  .jumbotronTitle {
+      font-size: 20px;
+  }
+  .resume-btn {
+      font-size: 10px;
+  }
+  .portfolio-proj-image1, 
+  .portfolio-proj-image2, 
+  .portfolio-proj-image3 {
+    display: block;
+    width: 100%; 
+    height: auto;
+    padding-bottom: 0px; 
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
+  .overlay {
+    position: relative;
+    opacity: 100;
+    height: 50%;
+    background-color: transparent;
+  }
+  .portfolio-proj-title {
+    font-size: 18px;
+    padding-bottom: .5em;
+    margin-top: 1.25em;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .portfolio-proj-desc1, 
+  .portfolio-proj-desc2 {
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0px;
+  }
+  .portfolio-proj-btn {
+    font-size: 10px;
+    margin-bottom: 2.25em;
+    margin-top: 0.5em;
+  }
+  .landingPageName {
+    font-size: 40px;
+  }
+  .landingPageTitle {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 18px;
+  } 
+  .devTitle {
+    font-size: 16px;
+  }
+  .aboutPar {
+      font-size: 12px;
+  }
+  .contactTitle {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: .5em;
+    margin-top: 1.25em;
+    text-align: center;
+  }
+  .contactLogo {
+    text-align: center;
+  }
+  .contactSubject {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .contactPar,
+  .contactAcct {
+    text-align: center;
+    font-size: 12px;
+  }
+  .contactFont {
+    font-size: 30px;
+  }
+  .footer {
+    font-size: 11px;
+  }
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+  .landingPageName {
+    font-size: 70px;
+  }
+  .landingPageTitle {
+    font-size: 30px;
+  }
+  .portfolio-proj-title {
+    font-size: 25px;
+  }
+  .portfolio-proj-btn {
+    font-size: 15px;
+    margin-bottom: 1.25em; 
+  }
+  .portfolio-proj-desc2 {
+    font-size: 15px;
+  }
+  .portfolio-proj-desc1 {
+    font-size: 15px;
+  }
+}
+
+/* Ipad Pro*/
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .landingPageName {
+    font-size: 80px;
+  }
+  .landingPageTitle {
+    font-size: 33px;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
